@@ -1,0 +1,122 @@
+{
+  "skill_name": "elite-content-studio",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I run a small cooking channel on YouTube (about 2,400 subs, I post one video a week, just me and my phone camera). I want to make a video about meal prepping for busy weeks. Can you help me make it actually good? I feel like my stuff blends in.",
+      "expected_output": "Runs intake briefly, then delivers Phase 1-4 style output: audience/competitor reasoning, ranked ideas or angles for the meal-prep topic, title+thumbnail pairs with mechanisms explained, hook options, and a shootable script (or offer to script the chosen package), all scaled to a solo phone-camera creator. Honest, no virality promises, rationale attached to recommendations.",
+      "files": [],
+      "assertions": [
+        "Presents multiple (5+) distinct idea/angle options for the meal-prep topic with an explicit ranking or recommended pick and reasoning",
+        "Provides 8+ title options with the persuasion mechanism or rationale labeled for each",
+        "Provides 3+ distinct thumbnail concepts, each specifying composition/subject, on-image text of 4 words or fewer, and color/contrast guidance",
+        "Includes at least one word-for-word scripted hook or opening (roughly the first 15 seconds)",
+        "The script explicitly marks retention/re-hook beats throughout, sets up at least one open loop that is closed later, and places the main payoff before the very end (around 70-85% of runtime)",
+        "Production guidance is scaled to a solo phone-camera creator (phone-specific advice, no assumption of pro gear or crew)",
+        "Performance expectations are qualitative with reasoning; no invented view counts, fake statistics, or guaranteed outcomes",
+        "States its working assumptions explicitly since no clarifying questions could be asked",
+        "Humanizer pass holds and is evidenced: (a) the script's spoken lines and viewer-facing copy contain zero AI-tell kill-list terms (delve, tapestry, testament, seamless, showcase, underscore, elevate, foster, 'serves as', 'stands as', 'marks a pivotal moment', 'in the heart of', 'game-changer') and zero hedging stacks ('could potentially', 'might possibly', 'has the ability to', 'in order to', 'due to the fact that'); (b) at most one negative-parallelism construction ('it's not just X, it's Y' / 'not only... but also'); and (c) the output explicitly documents that a humanizer/read-aloud pass was performed (QA note or checklist evidence) — all verified by grep/script over the files, not by eye"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "give me some title ideas for my video about why i switched from premiere to davinci resolve",
+      "expected_output": "Around 10 ranked titles spanning distinct mechanisms (curiosity gap, contrarian, specificity, search-intent), each with a one-line why, a recommended pick, stated assumptions, and a brief note pairing the winner with a thumbnail direction.",
+      "files": [],
+      "assertions": [
+        "Provides 8+ title options",
+        "Each title is labeled with its persuasion mechanism (curiosity gap, contrarian, specificity, search-intent, etc.) or a one-line rationale",
+        "Identifies a single recommended pick with justification",
+        "Every title is 60 characters or fewer, or any title exceeding 60 characters is explicitly flagged as over-length",
+        "Includes a thumbnail-pairing or packaging note connecting the title to a thumbnail direction",
+        "States its assumptions about the channel/audience briefly rather than asking blocking questions"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "My last video flopped. It's a 14-minute video called 'The Truth About Productivity Apps' — CTR was 3.1% (my channel usually gets 5-6%), average view duration 2:40, and impressions were about the same as normal. What went wrong and what should I do?",
+      "expected_output": "Diagnoses using the layered tree: normal impressions + below-baseline CTR points to packaging; 2:40/14min retention suggests promise/delivery mismatch too. Asks for or works around missing data (retention graph, traffic mix), gives ranked root causes with evidence, immediate fixes (thumbnail/title test), and lessons for the next video. No invented benchmarks.",
+      "files": [],
+      "assertions": [
+        "Identifies below-baseline CTR (3.1% vs the channel's usual 5-6%) as a packaging problem, judged against the channel's own norm rather than a universal 'good CTR' benchmark, AND delivers a structured verdict with explicitly ranked root causes (a committed primary and secondary), not parallel unranked observations",
+        "Analyzes retention (2:40 of 14:00) as a separate issue from CTR: computes the average-percentage-viewed (~19%) rather than leaving raw minutes, ties it to hook/promise delivery or pacing, and judges it against the channel's own retention norm or explicitly flags that norm as missing — no universal retention benchmark stated as fact",
+        "Notes that normal impressions mean distribution/demand was not the primary failure",
+        "Names the missing data as an explicit verification list of 3+ specific analytics, each tied to the decision it would resolve (e.g., retention-graph shape decides early-cliff vs slow-bleed), including a CTR-by-traffic-source / impression-mix check as a confound to clear before convicting the thumbnail",
+        "Gives concrete immediate actions (e.g., thumbnail/title change or A/B test) plus forward-looking lessons for the next videos",
+        "Does not invent numbers, benchmarks, or analytics the user did not provide"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "I've been posting gaming videos for 8 months — 43 uploads — and I'm still under 300 subs. Most videos get 20-50 views no matter how much time I spend editing. My recent titles are stuff like 'Elden Ring Part 12', 'Just chilling stream highlights', 'My best clips of March'. Honestly I'm close to giving up. What am I doing wrong?",
+      "expected_output": "Runs a channel-audit triage: identifies the dominant bottleneck (label-style titles signal a packaging + demand problem) among demand/packaging/retention/consistency with evidence, asks for or works around missing data, scales everything to a sub-1k channel (search-first, small-sample caveats), acknowledges the discouragement honestly without hype or invented stats, and delivers a small prioritized plan (quick wins like repackaging + a 30-day structure) plus a tracking/profile system.",
+      "files": [],
+      "assertions": [
+        "Diagnoses via structured triage: names the bottleneck categories (demand/packaging/retention/consistency or equivalent), commits to a dominant bottleneck with evidence from the provided titles/numbers, distinguishes it from a named secondary bottleneck, AND states a confidence level plus what evidence would raise or change it",
+        "Requests the specific missing data that would confirm the diagnosis as 3+ named analytics (e.g., impressions and CTR for recent videos, traffic-source mix, average % viewed / retention cliff), each tied to what it would confirm or rule out — a single 'go check your CTR' does not satisfy this",
+        "Scales advice to a sub-1k channel: search-first/evergreen emphasis and explicit small-sample noise caveats, not big-channel norms",
+        "Identifies genuine strengths or assets to keep (e.g., 43-upload consistency) and addresses the discouragement honestly — encouraging without hype, no virality promises, no invented statistics, and no universal numeric benchmarks stated as targets (e.g., 'aim for X% CTR'); expectations anchored to the channel's own data or labeled as estimates",
+        "Delivers a small prioritized plan (roughly 3-5 actions, e.g., a 30-day structure) focused on the diagnosed bottleneck, including at least one cheap quick win such as repackaging existing videos",
+        "Offers or creates a tracking/memory system (channel profile, performance log, or equivalent) so progress compounds across videos"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "I post on Instagram only — fitness content for busy moms, about 1,800 followers. My reels get 500-2,000 plays but I barely gain followers, maybe 10 a week. My bio just says 'Fitness lover 💪 Mom of 2'. Can you help me improve my profile and plan content that actually converts viewers into followers?",
+      "expected_output": "Diagnoses the follow-conversion gap using Instagram-native metrics (plays exist but follows lag: profile packaging + format consistency are the levers), delivers a concrete profile overhaul (rewritten bio with who-it's-for + outcome, name-field keyword, pinned posts/highlights strategy), proposes named repeatable format series, and provides a content plan with frame-one hooks for reels plus at least one save-designed carousel — all IG-native, honest, no follower-count promises.",
+      "files": [],
+      "assertions": [
+        "Diagnoses the follow-conversion gap along the social path (plays -> profile visits -> follows) using Instagram-native metrics (saves/shares, profile visits, follows per reach) rather than YouTube dialect (CTR/impressions)",
+        "Delivers a concrete profile overhaul: a rewritten bio (who it's for + outcome + CTA, replacing the vague 'Fitness lover' bio), a name-field keyword suggestion, and a pinned-posts and/or highlights strategy",
+        "Proposes named, repeatable format series (recurring formats, not just one-off post ideas)",
+        "Provides a concrete content plan including reel concepts with frame-one hooks and at least one carousel designed for saves (slide-1 hook, one idea per slide, save-oriented ending)",
+        "Advice is Instagram-native throughout (saves/shares as power metrics, Stories layer, caption/hashtag norms, 4:5/9:16 formats) rather than repurposed YouTube advice",
+        "Honest and grounded: states assumptions or asks for missing insights data, and makes no follower-count promises or invented benchmark statistics"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "A skincare brand just sent me their vitamin C serum for my first paid promo — I post on TikTok (about 4,200 followers). I don't want to film myself for this one; I want to make the whole ad with AI. I have good photos of myself and clear product shots, and I already pay for Higgsfield and Kling. Can you walk me through making the ad and give me everything I need to generate it?",
+      "expected_output": "Recognizes this as the sponsored/UGC ad workflow: two-stage pipeline (hero-image fusion of creator photo + product photo with an approval gate, then 9:16 image-to-video as a single uninterrupted shot), paste-ready prompts scoped to the creator's stated tools, a word-for-word spoken script sized to fit ~10s clips, both disclosures (paid promotion AND synthetic media), and honest expectations with no promised results.",
+      "files": [],
+      "assertions": [
+        "Recommends a two-stage pipeline: first a hero image fusing the creator photo + product photo, then image-to-video from that image — with an explicit approval/check gate on the hero image before any video generation is spent",
+        "The hero-image prompt is paste-ready and directs: the serum held or being applied naturally (handheld product), the product as focal point with logo/label legible, the creator's face unchanged, vertical 9:16",
+        "Ad clip direction specifies a single uninterrupted shot with the person addressing the camera, and caps spoken dialogue at roughly 1-2 sentences per ~10-second clip (or splits a longer ad into multiple hero-image variations, each animated as its own clip)",
+        "Includes BOTH disclosure requirements: paid-promotion labeling (#ad or the platform's branded-content flag) AND synthetic-media/AI disclosure for a realistic AI video of a real person",
+        "Provides a word-for-word spoken script whose lines contain zero AI-tell kill-list terms (delve, tapestry, testament, seamless, showcase, underscore, elevate, foster, 'serves as', 'stands as', 'game-changer') — verified by grep/script over the output file, not by eye",
+        "Honest and grounded: no promised results, sales figures, or virality; no invented statistics; performance expectations, if any, are qualitative with reasoning"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "I've hosted an interview podcast about career changes for 20 episodes now, roughly weekly. Most episodes get 40-60 downloads and it hasn't grown in months. My episode titles are like 'Episode 18: Interview with Sarah Mitchell'. I record on Zoom and publish audio-only to Spotify. What am I doing wrong and how do I actually grow this?",
+      "expected_output": "Diagnoses in podcast dialect (first-window downloads, consumption rate/drop-off, follows — not CTR/impressions), identifies the label-style titles as a packaging bottleneck with evidence, ranks growth levers the podcast way (clips + YouTube layer + guest distribution over in-app discovery), delivers an episode packaging and retention overhaul (search-query titles with rewritten examples, cold open, intro cap), stays honest about small-show numbers with no invented benchmarks, and ends with a small prioritized plan including a cheap quick win like retitling the back catalog.",
+      "files": [],
+      "assertions": [
+        "Diagnoses using podcast-native metrics (downloads per episode / first-window downloads, consumption rate or drop-off point, follows) rather than YouTube dialect (CTR, impressions, subscribers), commits to a dominant bottleneck with evidence — the label-style titles ('Episode 18: Interview with Sarah Mitchell') identified as a packaging problem — AND engages listener retention in the diagnosis: substantively uses consumption rate and/or drop-off point (not a passing mention), or explicitly asks the user for that analytics data before/alongside committing to the diagnosis",
+        "Ranks external distribution as the primary growth engine: vertical clips from episodes (Shorts/Reels/TikTok) and/or publishing episodes to YouTube — explicitly NOT relying on in-app discovery, charts, or 'post more and wait'",
+        "Leverages guests as distribution: guest clip packs or making guest sharing effortless, and/or guesting on other shows / feed swaps with similar-size shows",
+        "Delivers an episode packaging and retention overhaul: at least 3 rewritten example titles that work as search queries (topic promise + specificity, guest name only where searched), plus at least one audio-native retention fix (cold open pulled from the episode's best moment and/or branded intro capped at ~15 seconds)",
+        "Scales honestly to a small show: no shaming the 40-60 downloads, benchmarks against the show's own trend rather than invented industry averages, and makes no growth promises or fabricated statistics",
+        "Ends with a small prioritized plan (roughly 3-5 actions) including at least one cheap quick win (e.g., retitling existing back-catalog episodes), and states working assumptions or names the specific missing data (consumption rate, drop-off point, follower count) that would sharpen the diagnosis"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "I run a faceless science channel (about 900 subs) using a free one-command pipeline: it writes the script with AI, uses a TTS voice and stock photos, renders, and can auto-upload. Next video: why the Moon is slowly drifting away from Earth. Make me the script and upload package — I want to set it and forget it as much as possible.",
+      "expected_output": "Treats this as the faceless/automated entry point: keeps automation for rendering and formatting but names the human checkpoints (packaging approval, claim sign-off, full watch-through, no auto-publish) and the mass-produced-content monetization risk without fearmongering. Delivers the script in template format with a claim ledger in which every number about lunar recession is sourced or marked for the creator to verify (nothing filled from memory and presented as checked), runtime computed from word count with the wpm stated, visual direction per section with a sourcing/licensing plan and credits, an SEO package with sources and valid chapters, and a sub-1k search-first framing.",
+      "files": [],
+      "assertions": [
+        "Names specific human checkpoints that stay manual (at minimum: approving packaging before render, signing off facts, a full watch-through before publish) and recommends against unattended auto-publishing, with a one-line reason tied to quality or monetization risk",
+        "Explains the mass-produced/repetitive-content monetization risk accurately (a risk for near-identical templated uploads, not a ban on AI or faceless channels) and gives at least two concrete distinctiveness levers for this channel",
+        "Includes a claim ledger covering every number, date, and causal claim in the script (e.g., the recession rate and its tidal cause); each row has a cited source or is explicitly marked for the creator to verify — no figure is presented as verified without a source",
+        "Script states its words-per-minute assumption and derives section timestamps or total runtime from the spoken word count (verified by script/tool output, or explicitly labeled as hand-computed), and the payoff lands at roughly 70-85% of that computed runtime",
+        "Visual direction gives each section more than one distinct visual (not one image per section) and includes a sourcing plan that addresses licensing/attribution (e.g., public-domain agency imagery checked per item, stock license limits, CC attribution, AI disclosure) feeding a credits block in the description",
+        "SEO package includes a description with the keyword in the first ~150 characters, a SOURCES block, and chapters that start at 0:00 with at least 3 ascending entries each at least 10 seconds apart — verified by tool/script output rather than asserted",
+        "Spoken script and viewer-facing copy pass the humanizer kill-list and hedging checks and contain no false CTA claims (e.g., 'I read every comment') or stock re-hook phrases presented as mandatory",
+        "Scales to a sub-1k channel (search-first/evergreen framing) and makes no view, growth, or virality promises"
+      ]
+    }
+  ]
+}
